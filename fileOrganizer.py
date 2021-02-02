@@ -1,10 +1,10 @@
 import os
 import shutil
 
-#manual input var
+#manual input variables
 action = ["sort", "extract", "full_organize"]
 action = action[0]
-directory = 'path' # enter folder path
+DIRECTORY_PATH = 'path' # enter folder path
 
 def organize():
     for (path,dirs,files) in os.walk(DIRECTORY_PATH):
