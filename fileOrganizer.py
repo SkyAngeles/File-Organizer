@@ -2,15 +2,9 @@ import os
 import shutil
 
 #manual input var
-action = ["direct_organize", "extract", "full_organize"]
+action = ["sort", "extract", "full_organize"]
 action = action[0]
-directory = 'C:\\Users\ica\Downloads'
-
-BASE_PATH = os.path.expanduser('~')
-DIRECTORY_PATH = directory
-#DIRECTORY_PATH = os.path.join(BASE_PATH, 'Downloads')
-print(f"base path: {BASE_PATH}")
-print(f"downloads path: {DIRECTORY_PATH}")
+directory = 'path' # enter folder path
 
 def organize():
     for (path,dirs,files) in os.walk(DIRECTORY_PATH):
@@ -46,7 +40,7 @@ def extract():
                 pass
     print("folder extracted")
 
-if action == "direct_organize":
+if action == "sort":
     organize()
 elif action == "full_organize":
     extract()
