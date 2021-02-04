@@ -1,14 +1,12 @@
-=================== SETUP ===================
-
+# File Organizer
+## Setup
 pip install shutil
 
-============= CODE CONFIGURATION =============
-
+## Code Configuration
 Add chosen folder path to code
 
 Set the action of the code
 (sort, extract, full sort)
 
-============== RUNNING THE CODE ==============
-
+## Running The Code
 Run in terminal/ cmd
